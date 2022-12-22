@@ -38,7 +38,7 @@ export default {
         id: 3,
         text: 'Meeting at School',
         day: 'January 16th at 9: 30 am',
-        reminder: true
+        reminder: false
       },
     ]
   }
