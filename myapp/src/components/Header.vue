@@ -1,7 +1,11 @@
 <template>
     <header>
         <h1>{{ title }}</h1>
-        <TheButton text="Add Task" color="green" />
+        <TheButton 
+            @toggle-add-task="$emit('toggle-add-task')" 
+            :text="showAddTask ? 'Close' : 'Add Task'" 
+            :color="showAddTask ? 'red' : 'green'" 
+        />
     </header>
 </template>
 
@@ -12,6 +16,7 @@
         name: "TheHeader",
         props: {
             title: String,
+            showAddTask: Boolean
         },
         components: {
         TheButton,

@@ -1,8 +1,11 @@
 <template>
-    <div :class="[task.reminder ? 'reminder' : '', 'task']">
+    <div 
+        @dblclick="$emit('toggle-reminder', task.id)" 
+        :class="[task.reminder ? 'reminder' : '', 'task']"
+    >
         <h3>
             {{ task.text }}
-            <i class="fas fa-times"></i>
+            <i @click="onDelete(task.id)" class="fas fa-times"></i>
         </h3> 
         <p>{{ task.day }}</p>
     </div>
@@ -13,6 +16,11 @@
         name: "TheTask",
         props: {
             task: Object
+        },
+        methods: {
+            onDelete(id) {
+                this.$emit('delet-task', id)
+            }
         }
     }
 </script>
