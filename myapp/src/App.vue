@@ -27,6 +27,7 @@ import AddTask from "./components/AddTask.vue"
 
 export default {
   name: "App",
+  
   components: {
     TheHeader,
     TheFooter,
