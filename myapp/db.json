@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "text": "Play basket ball",
+      "day": "December 29th at 6: 30 pm",
+      "reminder": true
+    },
+    {
+      "id": "2",
+      "text": "Lunch with friends",
+      "day": "January 5th at 12: 30 pm",
+      "reminder": true
+    },
+    {
+      "id": "3",
+      "text": "Meeting at School",
+      "day": "January 16th at 9: 30 am",
+      "reminder": false
+    }
+  ]
+}
