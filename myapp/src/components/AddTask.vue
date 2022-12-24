@@ -6,7 +6,7 @@
                 type="text" 
                 v-model="text" 
                 name="text" 
-                laceholder="Add Task" 
+                placeholder="Add Task" 
                 autocomplete="off"
             />
         </div>
@@ -85,6 +85,13 @@
     margin: 5px;
     padding: 3px 7px;
     font-size: 17px;
+    background-color: #6d6a6a;
+    border: none;
+    border-radius: 2px;
+}
+
+.form-control ::placeholder {
+    color: #ffffff;
 }
 .form-control-check {
     display: flex;
@@ -97,5 +104,9 @@
 .form-control-check input {
     flex: 2;
     height: 20px;
+}
+
+.form-control-check > input[type="checkbox"] {
+    cursor: pointer;
 }
 </style>

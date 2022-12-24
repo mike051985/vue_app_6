@@ -30,9 +30,10 @@
     color: red;
 }
 .task {
-    background: #f4f4f4;
+    background: #504c4c;
     margin: 5px;
     padding: 10px 20px;
+    border-radius: 3px;
     cursor: pointer;
 }
 .task.reminder {
